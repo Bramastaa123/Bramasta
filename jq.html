@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="judul">kalkulator</h1>
+
+    <label for="angka1">Angka 1 </label>
+    <input type="text" id="angka1"> <br> <br>
+    <label for="angaka2">Angka 2</label>
+    <input type="text" id="angka2"><br><br>
+    <input type="button" value="+" >
+    <input type="button" value="-" >
+    <input type="button" value="*" >
+    <input type="button" value="/" >
+
+    <!-- <button type="button" id="merah">Merah dan membesar</button>
+    <button type="button" id="hijau">Hijau dan mengecil</button> -->
+    
+   <script src="/javaScript/jquery-3.6.2.min">
+    $(document).ready(function(){
+        $('input[type=button]'),click(function(){
+            let op = e.target.value;
+                let a1 = $('#angka1').val()
+                let a2 = $('#angka2').val()
+                let total;
+                if (op=='+'){
+                    total = Number(a1) + Number(a2);
+                }else if (op=='-'){
+                    total = Number(a1) - Number(a2);
+                }else if (op=='*'){
+                    total = Number(a1) * Number(a2);
+                }else if (op=='/'){
+                     total = Number(a1) / Number(a2);
+                }
+
+        })
+    })
+
+
+
+
+
+   </script>
+
+   
+</body>
+</html>
