@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- start navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- end navigation bar -->
+    <!-- start container -->
+    <div class="container my-5">
+        <div class="row mb-3">
+
+            <h2>Data Diri</h2>
+            <div class="col-12 col-md">
+                <label for="nama">Nama Anda </label>
+                <input type="text" class="form-control" id="nama" name="nama" placeholder="Masukkan Nama Anda ">
+
+            </div>
+            <div class="col-12 col-md">
+                <label for="email">Masukkan Email Anda</label>
+                <input type="text" id="email" class="form-control" name="email" placeholder="bramasta@contoh.com">
+
+            </div>
+
+            <div class="col-12 col-md">
+                <label for="nomor">No Telepon</label>
+                <input type="text" id="nomor" class="form-control" name="nomor"
+                    placeholder="Masukkan Nomor Telepon Anda ">
+
+            </div>
+            <div class="col-12 col-md">
+                <label for="alamat">Alamat Anda</label>
+                <textarea name="alamat" id="alamat" rows="3" class="form-control"></textarea>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+
+            <div class="col-12 col-md">
+                <label for="lahir">Tempat Lahir Anda</label>
+                <input type="text" id="lahir" class="form-control" name="lahir"
+                    placeholder="Masukkan Tempat Lahir Anda ">
+            </div>
+            <div class="col-12 col-md">
+                <label for="date">Tanggal</label>
+                <input type="date" id="tanggal" class="form-control" name="tanggal"
+                    placeholder="Masukkan Tanggal Lahir Anda">
+
+            </div>
+            <div class="col-12 col-md">
+                <label for="sekolah asal">SMA/SMK asal</label>
+                <input type="text" id="sekolah asal" class="form-control" name="sekolah asal"
+                    placeholder="SMA/SMK asal Anda">
+
+            </div>
+
+        </div>
+
+        <h2>Pilihan Program Studi</h2>
+
+        <div class="row mb-3">
+            <div class="col-6 col-md">
+                <label for="studi">Program Studi</label>
+                <select class="form-select" name="studi" id="studi" >
+                    <option value="">Pilihlah Program Studi</option>
+                    <option value="studi">D3</option>
+                    <option value="studi">S1</option>
+                    <option value="studi">S2</option>
+                    <option value="studi">S3</option>
+                    </select>
+            </div>
+    
+            <div class="col-12 col-md">
+                <label for="jurusan">Jurusan</label>
+                <select class="form-select" name="jurusan" id="jurusan">
+                    <option value=""> Pilihan Jurusan</option>
+                    <option value="studi">SOSPOL</option>
+                    <option value="studi">Teknik Informatika</option>
+                    <option value="studi">Hukum</option>
+                    <option value="studi">Teknik Sipil</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col">
+
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="reset" class="btn btn-danger">Reset</button>
+            </div>
+            
+        </div>
+    </div>
+    <!-- end container -->
+
+    </div>
+
+    <script src="/javaScript/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
